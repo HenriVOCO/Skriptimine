@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#Tervitus kasutajale
+
+user=`whoami`
+echo "Tere, $user"
+echo -n "!"
