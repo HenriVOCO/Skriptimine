@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#skript naitab kasutajale kuupaeva, kellaaega ja kalendrit
+
+tana=`date +"%A, %B %d, %Y"`
+kell=`date +"%H:%M"`
+kuu=`date +"%B %Y"`
+echo "Today is $tana"
+echo "Time is $kell"
+echo "Calendar of $kuu"
+cal | tail -n 7
