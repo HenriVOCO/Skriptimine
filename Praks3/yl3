@@ -1,0 +1,16 @@
+#!/bin/bash
+#arvutab EAP ajakulusid
+
+echo -n "Sisesta ainepunktide arv täisarvuna: "
+read ainepunkt
+echo -n "Sisesta nädalate arv täisarvuna: "
+read nadal
+
+ajakulu=$(($ainepunkt * 26)) 
+#echo "$ajakulu tundi"
+
+aeg=`echo "scale=1;$ajakulu/10" | bc`
+#echo $aeg
+
+ymar="`echo "($aeg+0.9)/1" | bc`"
+echo $ymar
