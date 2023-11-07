@@ -12,10 +12,8 @@ bussid=$(( $reisijad / $kohtade_arv ))
 
 mahajaanud=$(( $reisijad % $kohtade_arv ))
 
-if [ $mahajaanud  -eq 0 ]
+if [ $mahajaanud  -gt 0 ]
 then
-	echo "Lisabusse pole tarvis"
-else
 	bussid=$(($bussid + 1 ))
 fi
 
