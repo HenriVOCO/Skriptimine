@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#arvutab palju rahvast mahub bussidele
+
+echo -n "Sisesta reisijate arv: "
+read reisijad
+
+echo -n "Sisesta kohtade arv bussis: "
+read kohtade_arv
+
+bussid=$(( $reisijad / $kohtade_arv ))
+
+mahajaanud=$(( $reisijad % $kohtade_arv ))
+
+echo $mahajaanud
